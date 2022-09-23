@@ -1,4 +1,4 @@
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import styles from '../css/Transactions.module.css'
 
 
@@ -22,3 +22,10 @@ return(<table className={styles.table}>
 </table>
  )
 }
+
+Transactions.propTypes = {
+    id: PropTypes.string,
+    type: PropTypes.string,
+    amount: PropTypes.string,
+    currency:PropTypes.string
+  }
