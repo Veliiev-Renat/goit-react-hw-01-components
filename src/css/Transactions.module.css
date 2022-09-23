@@ -1,0 +1,26 @@
+.table{
+    margin-bottom: 100px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.table thead{
+    width: 500px;
+    
+}
+.table tbody{
+    width: 500px;
+}
+.head{
+    background-color: rgb(124, 204, 238);
+    width: calc(100% / 3);
+}
+.table tr {
+    display: flex;
+}
+.table tr th{
+    width: calc(100% / 3);
+}
+
