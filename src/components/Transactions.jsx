@@ -24,6 +24,7 @@ return(<table className={styles.table}>
 }
 
 Transactions.propTypes = {
+    props:PropTypes.array,
     id: PropTypes.string,
     type: PropTypes.string,
     amount: PropTypes.string,

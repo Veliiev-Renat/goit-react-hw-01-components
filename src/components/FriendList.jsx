@@ -15,6 +15,7 @@ export function FriendList({props}){
 }
 
 FriendList.propTypes = {
+    props:PropTypes.array,
     id: PropTypes.number,
     avatar: PropTypes.string,
     name: PropTypes.string,
