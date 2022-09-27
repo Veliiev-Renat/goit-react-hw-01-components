@@ -15,9 +15,9 @@ export function FriendList({props}){
 }
 
 FriendList.propTypes = {
-    props:PropTypes.array,
+    props:PropTypes.arrayOf(PropTypes.shape({ 
     id: PropTypes.number,
     avatar: PropTypes.string,
     name: PropTypes.string,
-    isOnline:PropTypes.bool
+    isOnline:PropTypes.bool}))
   }

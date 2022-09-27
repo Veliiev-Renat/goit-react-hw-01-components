@@ -24,9 +24,9 @@ return(<table className={styles.table}>
 }
 
 Transactions.propTypes = {
-    props:PropTypes.array,
+    props:PropTypes.arrayOf(PropTypes.shape({ 
     id: PropTypes.string,
     type: PropTypes.string,
     amount: PropTypes.string,
-    currency:PropTypes.string
+    currency:PropTypes.string}))
   }

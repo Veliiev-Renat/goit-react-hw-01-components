@@ -4,7 +4,7 @@ import styles from '../css/Statistics.module.css'
 export function Statistics({title,stats}){
     return(
         <section className={styles.statistics}>
-  {title!==undefined &&(<h2 className={styles.title}>{title}</h2>)}
+  {title &&(<h2 className={styles.title}>{title}</h2>)}
 
   <ul className={styles.list}>
     <li className={styles.item} style={{backgroundColor:'rgb(39, 167, 226)'}}>
@@ -28,8 +28,9 @@ export function Statistics({title,stats}){
 }
 
 Statistics.propTypes = {
-    stats:PropTypes.array,
+    stats:PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
     label: PropTypes.string,
-    percentage: PropTypes.string,
+    percentage: PropTypes.string}
+    )),
   }

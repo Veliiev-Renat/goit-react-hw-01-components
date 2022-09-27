@@ -33,12 +33,10 @@ export function User({avatar,username,tag,location,stats}){
 }
 
 User.propTypes = {
+    props:PropTypes.arrayOf(PropTypes.shape({ 
     username: PropTypes.string,
     tag: PropTypes.string,
     location: PropTypes.string,
     avatar: PropTypes.string,
-    stats:PropTypes.object,
-    views:PropTypes.number,
-    likes:PropTypes.number,
-    followers:PropTypes.number
+    stats:PropTypes.objectOf(PropTypes.number)}))
   }
