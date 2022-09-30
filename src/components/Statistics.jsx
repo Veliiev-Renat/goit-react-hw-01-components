@@ -29,8 +29,8 @@ export function Statistics({title,stats}){
 
 Statistics.propTypes = {
     stats:PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string,
     label: PropTypes.string,
     percentage: PropTypes.string}
     )),
+    title: PropTypes.string
   }
